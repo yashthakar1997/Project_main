@@ -28,7 +28,7 @@ if($count==1){
 // Register $myusername, $mypassword and redirect to file "login_success.php"
 echo "sucess";
 //echo "<a href='index.php'></a>";
-header("Location:index.php");
+header("Location:admin.php");
 }
 else {
 echo "Wrong Username or Password";

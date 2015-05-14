@@ -16,8 +16,10 @@
 			<li>Pratik sir </li>
 			<li>Jotinya sir</li>
   </div>	
-  <div class="col-md-3">
+  <div class="well well-sm">
 			<p><h3>Hit counter</h3>
 			<strong><h2><?php include "php/counter.php";?></h2></strong>
+			<a href="login.php">login</a>
+		    <a href="reg.php">register free</a>
   </div>
 </div>

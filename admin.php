@@ -18,40 +18,51 @@
 	<div class="container">
 		<div class="navbar-header">
 			<?php include('php/header.php'); ?>
-			<?php include('php/offers_menu.php'); ?>
+			<?php include('php/no_active_menu.php'); ?>
 		</div>  
 	</div>
 	<div class="container">
 			
 						
 		<div class="CONTAINER,offers " id="offers" style="height:400px;">
-				<div id="my-div">
-					
-					<h1 align="center">Log In </h1>
-		<form action="login.php" method="post">
-		<table width="100%"   cellspacing="1" cellpadding="1" >
-  		<tr>
-    		<td width="250" height="35" align="right">User Id </td>
-    		<td><input type="text" name="user" size="40"/></td>
-  		</tr>
-  		<tr>
-    		<td height="38" align="right" width="250">Password </td>
-    		<td><input type="password" name="pass" size="40"/></td>
-  		</tr>
-  		<tr>
-    		<td height="47" colspan="2" align="center"><input id="button" type="submit" name="submit" value="Log In"/></td>
-   		</tr>
-		</table>
-		
-	
 			
-				
+			
+					<div id="my-div">
+						
+						
+						<h1 align="center">Enter Details </h1>
+						<form action="admin.php" method="post">
+						<table width="100%"   cellspacing="1" cellpadding="1" >
+							<tr>
+								<td width="250" height="35" align="right">place name</td>
+								<td><input type="text" name="name" size="40"/></td>
+							</tr>
+							<tr>
+								<td width="250" height="35" align="right">city</td>
+								<td><input type="text" name="city" size="40"/></td>
+							</tr>
+							<tr>
+								<td height="38" align="right" width="250">location latitude</td>
+								<td><input type="double" name="location_lat" size="40"/></td>
+							</tr>
+							<tr>
+								<td height="38" align="right" width="250">location longitude</td>
+								<td><input type="double" name="location_lon" size="40"/></td>
+							</tr>
+							<tr>
+								<td height="38" align="right" width="250">created at</td>
+								<td><input type="date" name="created_at" size="40"/></td>
+							</tr>
+							<tr>
+								<td height="47" colspan="2" align="center"><input id="button" type="submit" name="submit" value="create"/></td>
+							</tr>
+						</table>
 		
-		<?php include 'php/loginlogic.php'?>
+							<?php include 'php/adminlogic.php'?>
 		
-			</form>
-					
-	</div>
+						</form>
+											
+					</div>
 			
 		</div>
 		
