@@ -10,6 +10,29 @@
 			font-family: "Helvetica Neue", Helvetica, Arial, Verdana, "Trebuchet MS";
 }
 
+
+#my-div
+{
+    width    : auto;
+    height   : 400px;
+    overflow : hidden;
+    position : relative;
+	border:solid;
+}
+ 
+#my-iframe
+{
+    position : absolute;
+    top      : -210px;
+    left     : -100px;
+    width    : 1280px;
+    height   : 1200px;
+}
+
+
+
+
+
 #main {
 	border:solid;
 	

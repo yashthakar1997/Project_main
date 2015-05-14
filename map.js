@@ -17,9 +17,19 @@ function initialize() {
 
    		
    
-	var i,j;
+	var i,j,k,nam;
+	//k=0;
+	//do{
+	//	alert (typeof(latt));
+	//	alert (name.split(","));
+	//nam[k] = name.split(",");
+	//alert (nam[k]);
+	//k=k+1;
+	//}while(k<10)
+	
 	for(i=0;i<latt.length;i++)
 	{    
+
 		contentString = 'hello ';
 		content: contentString;
 
@@ -27,15 +37,16 @@ function initialize() {
  		
 	      var myLatlng = new google.maps.LatLng(latt[i],longi[i]);
 	  
-	 // for(j=0;j<name.length;j++){
+	 /*for(j=0;j<name.length;j++){
 
-		//name[i] +=name[j];
-	  //}
+		name[i] +=name[j];
+	  }*/
+
 	  
 	  var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title:'cafes'
+      title:name
 		});
 	  
   google.maps.event.addListener(marker, 'click', function() {
@@ -78,7 +89,7 @@ function initialize() {
     //var contentString = name;
 
 	
-  
+
   
   
 }
