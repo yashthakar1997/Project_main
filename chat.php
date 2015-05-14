@@ -31,13 +31,17 @@
 	</div>
 	<div class="container">
 			<div class="container" id="main" style="float:left;height:400px;width:700px;margin:0px;">
-			    <?php include('chat/chat_index.php');?>      
+			    <div id="messages">
+		
+				</div>
+				      
 			</div>
     
 		<div class="CONTAINER,offers " id="offers" style="height:400px;">
 			<div class="container">
-			   
-			</div>
+				<?php include('res_chat.php');?>
+				
+				</div>
 			
 		</div>
 		

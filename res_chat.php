@@ -16,15 +16,13 @@
 		<div id="input">
 			<div id="feedback"></div>
 			<form action="#" method="post" id="form_input">
-				<lable>Enter Name:<input type="text" name="sender" id="sender"/></lable>
-				<br /><lable>Enter Message:<br /><textarea id="message" cols="25" rows="4"></textarea></lable><br />
+				<br /><lable><strong>Enter Name:</strong><input type="text" name="sender" id="sender"/></lable>
+				<br /><br /><lable><strong>Enter Message:</strong><textarea id="message" cols="25" rows="4"></textarea></lable><br />
 				<input type="submit" name="send" id="send" value="Send Message"/>
 			</form>
 		</div><!-- Input -->
 	
-		<div id="messages">
-		
-		</div><!-- Messages -->
+		<!-- Messages -->
 		
 		<!-- Javascript -->
 		<script type="text/javascript" src="scripts/js/jquery-1.7.2.min.js"></script>

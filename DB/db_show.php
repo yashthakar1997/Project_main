@@ -16,7 +16,7 @@
 	 while($row = mysql_fetch_assoc($retval))
        	{
 			 
-			 echo "{$row['name']}<hr />" ;
+			 echo "{$row['name']}<br />" ;
 			  
 			$lat[] =$row['location_lat'];
 			$lon[]= $row['location_lon'];
