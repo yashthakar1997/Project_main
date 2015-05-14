@@ -1,0 +1,58 @@
+#Layer1 {
+	background-color: #f0ad4e;
+	position: absolute;
+	width: 1184px;
+	height: ;
+	z-index: 1;
+	left: 92px;
+	top: -5px;
+	border:solid;   
+			font-family: "Helvetica Neue", Helvetica, Arial, Verdana, "Trebuchet MS";
+}
+
+#main {
+	border:solid;
+	
+}
+}
+#slide_img{	
+	border:solid;
+}
+#offers{
+	border:solid; 
+	overflow:none;
+	
+}
+#dev{
+	border:solid;
+	height:100px;	
+	font-family: "Helvetica Neue", Helvetica, Arial, Verdana, "Trebuchet MS";
+}
+#menu{
+	 color: rgba(0, 0, 0, 0.87);
+	border:solid;	
+	height:50px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 17px;
+	letter-spacing: 0.001em;
+  
+	}
+#header{
+	border:solid;
+	height:100px;
+	}
+
+html, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+	 
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:45	0px;
+      margin: auto;
+  }
+ 
+	  
