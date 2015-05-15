@@ -11,6 +11,17 @@
 }
 
 
+#panel {
+        position: absolute;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+      }
+
+
 #my-div
 {
     width    : auto;
@@ -43,8 +54,8 @@
 }
 #offers{
 	background-color:#58D3F7;
-	border:solid; 
-	overflow:none;
+	border:solid;
+    overflow: NONE;
 	
 }
 #dev{

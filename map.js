@@ -1,12 +1,18 @@
 
+
+var a = name;
+b = a.split(",");
+b[0] = "MoMo";
+
+
 		
 var map;
 var i;
-
+var geocoder;
 
 
 function initialize() {
-	
+	 geocoder = new google.maps.Geocoder();
   
   var mapOptions = {
     zoom: 10,
@@ -17,52 +23,28 @@ function initialize() {
 
    		
    
-	var i,j,k,nam;
-	//k=0;
-	//do{
-	//	alert (typeof(latt));
-	//	alert (name.split(","));
-	//nam[k] = name.split(",");
-	//alert (nam[k]);
-	//k=k+1;
-	//}while(k<10)
+	var i,j=0;
 	
 	for(i=0;i<latt.length;i++)
-	{    
-
-		contentString = 'hello ';
-		content: contentString;
-
+	{   
+			
 		  var infowindow = new google.maps.InfoWindow();
  		
 	      var myLatlng = new google.maps.LatLng(latt[i],longi[i]);
 	  
-	 /*for(j=0;j<name.length;j++){
-
-		name[i] +=name[j];
-	  }*/
-
-	  
 	  var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title:name
+      title:b[i]
 		});
-	  
+	 
   google.maps.event.addListener(marker, 'click', function() {
 	infowindow.setContent(this.title);
 	infowindow.open(map,this);
     });
 	
   
-}
-
-    
- 
-   
-   
-   
-   
+}  
 // for geolocation
 
     if(navigator.geolocation) {
@@ -87,13 +69,23 @@ function initialize() {
   
   
     //var contentString = name;
-
+	}
 	
-
-  
-  
-}
-
+function codeAddress() {
+  var address = document.getElementById('address').value;
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
+}	
+	
 function handleNoGeolocation(errorFlag) {
   if (errorFlag) {
     var content = 'Error: The Geolocation service failed.';
@@ -108,15 +100,26 @@ function handleNoGeolocation(errorFlag) {
   };
   var infowindow = new google.maps.InfoWindow(options);
   map.setCenter(options.position);
+  
+
+  
+}
+
+
+
+function codeAddress() {
+  var address = document.getElementById('address').value;
+  geocoder.geocode( { 'address': address}, function(results, status) {
+    if (status == google.maps.GeocoderStatus.OK) {
+      map.setCenter(results[0].geometry.location);
+      var marker = new google.maps.Marker({
+          map: map,
+          position: results[0].geometry.location
+      });
+    } else {
+      alert('Geocode was not successful for the following reason: ' + status);
+    }
+  });
 }
 // endddddddddddddddd geo location
-
-
- 
- 
-
-
 google.maps.event.addDomListener(window, 'load', initialize);
-
-
-   

@@ -44,8 +44,16 @@
 			var longi= <?php echo json_encode($lon);?>;
 			var name = <?php echo json_encode($aname);?>
 		
+	
+		
+		
 			</script>
-			<script src="map.js"></script>     
+			<script src="map.js"></script>  
+				 
+			<div id="panel">
+					Find Other Location :<input id="address" type="textbox" value="gujarat,india">
+					<input type="button" value="Geocode" onclick="codeAddress()">
+			</div>
 			<?php  ?>
 		</div>
 		

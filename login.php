@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="navbar-header">
 			<?php include('php/header.php'); ?>
-			<?php include('php/offers_menu.php'); ?>
+			<?php include('php/no_active_menu.php'); ?>
 		</div>  
 	</div>
 	<div class="container">
